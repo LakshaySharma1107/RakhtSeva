@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+
+.home-container {
+    position: relative; /* Necessary for absolute positioning of text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height of the viewport */
+    width: 100vw;  /* Full width of the viewport */
+    background-image: url('/home.png');
+    background-size: cover;  /* Ensures the image covers the entire screen */
+    background-position: center center;  /* Centers the image */
+    background-repeat: no-repeat;  /* Prevents image repetition */
+    overflow: hidden; /* Prevents content overflow outside the viewport */
+  }
+  
+  .overlay-text {
+    position: absolute; /* Absolute positioning to place it on top */
+    color: white; /* White text color */
+    font-size: 4rem; /* Larger font size for the main headline */
+    text-align: center; /* Center the text */
+    font-weight: 700; /* Make the font bold */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8); /* Enhanced text shadow for better contrast */
+    letter-spacing: 2px; /* Adds a little space between the letters */
+    line-height: 1.2; /* Adjust line height for better spacing */
+    width: 80%; /* Ensures text doesn't overflow */
+    margin-top: -100px; /* Adjust this to give more space above */
+  }
+  
+  .secondary-text {
+    position: absolute;
+    color: white;
+    font-size: 1.8rem; /* Adjust font size for secondary text */
+    text-align: center;
+    font-weight: 500; /* Slightly lighter than the main text */
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7); /* Subtle text shadow */
+    margin-top: 10%; /* Increased margin to separate from the main text */
+    width: 85%; /* Ensures text stays within bounds */
+    line-height: 1.6;
+  }
+  
+  .signup-text {
+    position: absolute;
+    color: white;
+    font-size: 1.6rem; /* Smaller font size for the signup text */
+    text-align: center;
+    font-weight: 500;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7); /* Subtle shadow */
+    margin-top: 30%; /* Increased space between text lines */
+    width: 85%;
+    line-height: 1.8;
+  }
+  
+  a.signup-button {
+    display: inline-block;
+    margin-top: 20%; /* Add more space before the button */
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #ff5c5c; /* Add a button color */
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+  }
+  
+  a.signup-button:hover {
+    background-color: #e53e3e; /* Darken on hover */
+  }
+  
